@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Mail, MessageCircle, Twitter, Instagram, Linkedin, Send, Heart, Coffee } from 'lucide-react';
+import { Mail, MessageCircle, Twitter, Instagram, Linkedin, Send, Heart, Coffee, Github } from 'lucide-react';
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -66,6 +66,14 @@ const Contact: React.FC = () => {
       link: "https://www.linkedin.com/in/aastha-modi-a24450255/",
       color: "portfolio-pink",
       description: "Connect professionally"
+    },
+    {
+      name: "GitHub",
+      icon: <Github className="w-5 h-5" />,
+      handle: "yourusername",
+      link: "https://github.com/yourusername",
+      color: "portfolio-purple",
+      description: "Check out my projects"
     }
   ];
 
