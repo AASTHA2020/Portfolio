@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from 'react';
-import { Mail, MessageCircle, Twitter, Instagram, Linkedin, Send, Heart, Coffee, Github } from 'lucide-react';
-import { motion } from "framer-motion";
+import { Mail, MessageCircle,      Linkedin, Send, Heart, Coffee, Github } from 'lucide-react';
+// import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 const formSchema = z.object({
@@ -19,33 +19,12 @@ type FormData = z.infer<typeof formSchema>;
 
 const Contact: React.FC = () => {
   console.log("[Contact] Component rendering");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const {
-    register,
-    handleSubmit,
     reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
-
-  const onSubmit = useCallback(async (data: FormData) => {
-    console.log("[Contact] Form submitted with data:", data);
-    setIsSubmitting(true);
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("[Contact] Form submission successful");
-      toast.success("Message sent successfully!");
-      reset();
-    } catch (error) {
-      console.error("[Contact] Form submission failed:", error);
-      toast.error("Failed to send message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  }, [reset]);
 
   console.log("[Contact] Rendering form with errors:", errors);
 
