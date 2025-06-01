@@ -7,7 +7,7 @@ import * as z from "zod";
 // import { Button } from "@/components/ui/button";
 // import { Input } from "@/components/ui/input";
 // import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
+// import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -20,7 +20,6 @@ type FormData = z.infer<typeof formSchema>;
 const Contact: React.FC = () => {
   console.log("[Contact] Component rendering");
   const {
-    reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
