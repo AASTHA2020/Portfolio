@@ -11,9 +11,9 @@ interface Project {
 
 const personalProjects: Project[] = [
   {
-    title: "Amazon Clone (Ecommerce Website)",
+    title: "Ecommerce Website",
     description: "Developed an Amazon clone using React with Firebase for backend services.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+    image: "https://media.istockphoto.com/id/1499059936/photo/online-shop-on-laptop-screen-concept-modern-ecommerce-page-with-products-and-shopping-cart.jpg?s=2048x2048&w=is&k=20&c=6Zgz__m5XWykd8_GYRKUcazjEtPQAJ_ACHy7s6Rflu0=",
     webapp: "https://mctreact.vercel.app/",
   },
   {
@@ -31,13 +31,13 @@ const personalProjects: Project[] = [
   {
     title: "Real Estate Website - RentUp",
     description: "Modern platform for renting properties with search and listings.",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+    image: "https://themezhub.com/wp-content/uploads/rentup.png",
     webapp: "https://rent-house-react-jade.vercel.app/",
   },
   {
     title: "CryptoView",
     description: "Real-time cryptocurrency portfolio tracker with real-time  alerts. ",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=300&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1681487464375-7cde580bf4ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3J5cHRvY3VycmVuY3l8ZW58MHx8MHx8fDA%3D",
     webapp: "https://cryptoview-one.vercel.app/",
   },
 ];
@@ -46,17 +46,17 @@ const companyProjects: Project[] = [
   {
     title: "Learning Management System (LMS)",
     description: "LMS with features like course creation, quizzes, assignments, and tracking. Enabled seamless collaboration between instructors and students, integrated analytics dashboards, and automated grading workflows.",
-    image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500&h=300&fit=crop",
+    image: "https://media.istockphoto.com/id/1041015668/photo/office-stuff-and-devices-floating-with-e-learning-platform.jpg?s=612x612&w=0&k=20&c=U0-BLQgPa3GZKnBxD9p9aQNNdTigbl8TQ1Kay3ZuAFU=",
   },
   {
     title: "Vehicle Insurance Website (USA Company)",
     description: "US-based insurance website focusing on policy management and UX . Implemented secure online claims, active chat support, real-time policy quotes, and a responsive design for mobile and desktop users.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=300&fit=crop",
+    image: "https://media.istockphoto.com/id/905536966/photo/man-filling-car-insurance-form-on-digital-tablet.jpg?s=2048x2048&w=is&k=20&c=AvXqK1jJqjhxYLZPTEG98GQMvS12P-rV6l84Sj7EuDM=",
   },
   {
     title: "Brand-Influencer Platform",
     description: "Connects brands with influencers for campaign management. Features include campaign analytics, automated contract generation, and real-time messaging between brands and influencers.",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=500&h=300&fit=crop",
+    image: "https://media.istockphoto.com/id/1371081916/photo/content-wording-on-wooden-cubes-with-speech-bubbles.jpg?s=2048x2048&w=is&k=20&c=SqVgeB3948cbIJzbIFEchLpAeED6-QOfLq48RjADqj8=",
   },
 ];
 

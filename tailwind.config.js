@@ -51,6 +51,7 @@ export default {
         'portfolio-purple': '#6B46C1',
         'portfolio-cyan': '#38B2AC',
         'portfolio-pink': '#ED64A6',
+        'portfolio-yellow': '#FFDF00',
       },
       borderRadius: {
         lg: "var(--radius)",

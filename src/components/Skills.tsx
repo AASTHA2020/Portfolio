@@ -9,9 +9,11 @@ const skillCategories = [
     color: "portfolio-cyan",
     skills: [
       { name: "React.js", level: 95 },
+      { name: "Redux", level: 90 },
+      { name: "JavaScript", level: 95 },
       { name: "TypeScript", level: 90 },
       { name: "Next.js", level: 85 },
-      { name: "Vue.js", level: 80 },
+      // { name: "Vue.js", level: 80 },
       { name: "Tailwind CSS", level: 95 },
       { name: "Framer Motion", level: 85 }
     ]
@@ -22,11 +24,15 @@ const skillCategories = [
     color: "portfolio-purple",
     skills: [
       { name: "Node.js", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Express.js", level: 88 },
+      { name: "Express.js", level: 85 },
+      { name: "GraphQL", level: 80 },
+      { name: "REST APIs", level: 90 },
+      { name: "WebSockets", level: 75 },
+      // { name: "Python", level: 85 },
+      // { name: "Express.js", level: 88 },
       { name: "PostgreSQL", level: 82 },
       { name: "MongoDB", level: 85 },
-      { name: "Redis", level: 75 }
+      // { name: "Redis", level: 75 }
     ]
   },
   {
@@ -35,6 +41,7 @@ const skillCategories = [
     color: "portfolio-pink",
     skills: [
       { name: "React Native", level: 80 },
+
       { name: "Flutter", level: 75 },
       { name: "Expo", level: 85 },
       { name: "PWA", level: 90 },
@@ -45,14 +52,14 @@ const skillCategories = [
   {
     title: "Programming Languages",
     icon: <Code className="w-6 h-6" />,
-    color: "portfolio-gold",
+    color: "portfolio-yellow",
     skills: [
       { name: "JavaScript", level: 95 },
       { name: "TypeScript", level: 90 },
-      { name: "Python", level: 85 },
+      // { name: "Python", level: 85 },
       { name: "Java", level: 75 },
-      { name: "Go", level: 70 },
-      { name: "Rust", level: 65 }
+      // { name: "Go", level: 70 },
+      // { name: "Rust", level: 65 }
     ]
   },
   {
@@ -62,9 +69,7 @@ const skillCategories = [
     skills: [
       { name: "Figma", level: 90 },
       { name: "Adobe XD", level: 85 },
-      { name: "Sketch", level: 80 },
-      { name: "Prototyping", level: 88 },
-      { name: "User Research", level: 82 },
+      
       { name: "Design Systems", level: 90 }
     ]
   },
@@ -76,16 +81,14 @@ const skillCategories = [
       { name: "Docker", level: 85 },
       { name: "AWS", level: 80 },
       { name: "Git", level: 95 },
-      { name: "CI/CD", level: 85 },
-      { name: "Kubernetes", level: 75 },
-      { name: "Terraform", level: 70 }
+     
     ]
   }
 ];
 
 const technologies = [
-  "React", "Node.js", "TypeScript", "Python", "PostgreSQL", "MongoDB", 
-  "AWS", "Docker", "Kubernetes", "Next.js", "Vue.js", "Express.js",
+  "React", "Node.js","JavaScript", "TypeScript", , "PostgreSQL", "MongoDB", 
+   "Next.js",  "Express.js",
   "Tailwind CSS", "Framer Motion", "Redux", "GraphQL", "REST APIs", "WebSockets"
 ];
 

@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      handle: "yourusername",
-      link: "https://github.com/yourusername",
+      handle: "Aastha2020",
+      link: "https://github.com/AASTHA2020",
       color: "portfolio-purple",
       description: "Check out my projects"
     }
@@ -158,8 +158,8 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column - Quick Messages */}
-          <div className="scroll-reveal">
+            {/* Right Column - Quick Messages */}
+            <div className="scroll-reveal">
             <h3 className="text-2xl font-bold text-white mb-8">Quick Start Messages</h3>
             <p className="text-gray-400 mb-6">
               Not sure what to say? Here are some conversation starters you can copy and use!
@@ -167,36 +167,42 @@ const Contact: React.FC = () => {
             
             <div className="space-y-3 mb-8">
               {quickMessages.map((message, index) => (
-                <div 
-                  key={index}
-                  className="group glass border border-portfolio-glass-border rounded-lg p-4 hover:bg-portfolio-glass/50 transition-all duration-300 cursor-pointer"
-                  onClick={() => navigator.clipboard.writeText(message.replace(/[^\w\s!?.']/g, ''))}
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {message}
-                    </span>
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-xs text-portfolio-cyan">Click to copy</span>
-                    </div>
+              <a
+                key={index}
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                onClick={e => {
+                navigator.clipboard.writeText(message.replace(/[^\w\s!?.']/g, ''));
+                }}
+              >
+                <div className="glass border border-portfolio-glass-border rounded-lg p-4 hover:bg-portfolio-glass/50 transition-all duration-300 cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
+                  {message}
+                  </span>
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs text-portfolio-cyan">Click to DM</span>
                   </div>
                 </div>
+                </div>
+              </a>
               ))}
             </div>
 
             {/* Coffee Invitation */}
             <div className="glass border border-portfolio-gold/30 rounded-xl p-6 text-center">
               <Coffee className="w-12 h-12 text-portfolio-gold mx-auto mb-4" />
-              <h4 className="text-xl font-bold text-white mb-2">Local? Let's Grab Coffee!</h4>
+              <h4 className="text-xl font-bold text-white mb-2">Interested in a Professional Meetup?</h4>
               <p className="text-gray-400 text-sm mb-4">
-                If you're in the area, I'm always up for a coffee chat about tech, 
-                projects, or just life in general.
+              If you're local and would like to discuss projects, technology, or collaboration opportunities in person, feel free to reach out for a coffee meeting.
               </p>
               <button className="px-6 py-3 bg-portfolio-gold/20 border border-portfolio-gold/30 text-portfolio-gold hover:bg-portfolio-gold hover:text-white transition-all duration-300 rounded-full font-medium">
-                Schedule a Coffee Chat
+              Request a Coffee Meeting
               </button>
             </div>
-          </div>
+            </div>
         </div>
 
         {/* Bottom CTA */}

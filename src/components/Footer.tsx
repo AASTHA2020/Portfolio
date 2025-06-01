@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           {/* Copyright */}
           <div className="border-t border-portfolio-glass-border pt-6">
             <p className="text-gray-400 text-sm sm:text-base">
-              © 2024 Aastha Modi. Crafted with ❤️ and lots of ☕
+              © 2025 Aastha Modi. Crafted with ❤️ and lots of ☕
             </p>
           </div>
         </div>
