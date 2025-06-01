@@ -4,7 +4,7 @@ import { Github } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typewriterText, setTypewriterText] = useState('');
-  const fullText = "Full Stack Developer & UI/UX Designer";
+  const fullText = "Software Developer & UI/UX Designer";
   
   useEffect(() => {
     let index = 0;

@@ -31,9 +31,11 @@ const About: React.FC = () => {
               
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  Hello! I'm Aastha, a dedicated full-stack developer with a passion for creating 
+                  <strong>
+                  Hello! I'm Aastha, a dedicated full-stack web developer with a passion for creating 
                   innovative digital solutions. My journey began with curiosity about how things work 
                   on the web, and it has evolved into a career focused on building exceptional user experiences.
+                  </strong>
                 </p>
                 
                 <p>
