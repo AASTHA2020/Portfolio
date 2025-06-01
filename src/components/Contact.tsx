@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block"
-                onClick={e => {
+                onClick={() => {
                 navigator.clipboard.writeText(message.replace(/[^\w\s!?.']/g, ''));
                 }}
               >
