@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 270 50% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 270 50% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-background/30 backdrop-blur-lg border border-white/10;
+}
+
+.glass-card {
+  @apply glass rounded-xl p-6 shadow-xl;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  @apply fixed w-6 h-6 rounded-full pointer-events-none z-50 mix-blend-difference;
+  background: white;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor.hover {
+  @apply w-12 h-12 bg-primary;
+}
+
+/* Loading Screen */
+.loading-screen {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-background;
+}
+
+.loading-logo {
+  @apply w-24 h-24 animate-float;
+}
+
+/* Section Transitions */
+.section-transition {
+  @apply relative h-32 overflow-hidden;
+}
+
+.section-divider {
+  @apply absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-transparent;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .glass-card {
+    @apply p-4;
+  }
+  
+  .section-transition {
+    @apply h-24;
+  }
+}
